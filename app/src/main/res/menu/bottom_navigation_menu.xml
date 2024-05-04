@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/home" />
+
+    <item
+        android:id="@+id/action_category"
+        android:title="Categories"
+        android:icon="@drawable/categories" />
+
+    <item
+        android:id="@+id/action_create"
+        android:title="Create"
+        android:icon="@drawable/add" />
+
+    <item
+        android:id="@+id/action_flashcards"
+        android:title="Flashcards"
+        android:icon="@drawable/flashcards" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile"
+        android:icon="@drawable/profile" />
+</menu>

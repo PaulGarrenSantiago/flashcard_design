@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7C0F5"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="413dp"
+        android:layout_height="94dp"
+        android:background="#51E3D5"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="401dp"
+        android:layout_height="515dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.333">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="6"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:rowCount="4">
+
+            <!-- First row: Two RelativeLayouts -->
+            <!-- First RelativeLayout -->
+            <RelativeLayout
+                android:layout_width="188dp"
+                android:layout_height="129dp"
+                android:layout_row="0"
+                android:layout_columnSpan="3"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white">
+
+                <!-- ImageView (Top Middle) -->
+                <ImageView
+                    android:id="@+id/category_icon1"
+                    android:layout_width="79dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/science" />
+
+                <!-- TextView (Bottom) -->
+                <TextView
+                    android:id="@+id/category_textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_icon1"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_topic8"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/category_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_textview1"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_text8"
+                    android:textAlignment="center"
+                    android:textColor="#737373"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <!-- Second RelativeLayout -->
+            <RelativeLayout
+                android:layout_width="188dp"
+                android:layout_height="129dp"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnSpan="3"
+                android:layout_marginEnd="5dp"
+                android:background="@color/white">
+
+                <!-- ImageView (Top Middle) -->
+                <ImageView
+                    android:id="@+id/category_icon2"
+                    android:layout_width="79dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/systems" />
+
+                <!-- TextView (Bottom) -->
+                <TextView
+                    android:id="@+id/category_textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_icon2"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_topic"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/category_desc1"
+                    android:layout_width="160dp"
+                    android:layout_height="34dp"
+                    android:layout_below="@id/category_textview2"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_text8"
+                    android:textAlignment="center"
+                    android:textColor="#737373"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <!-- Second row: Two RelativeLayouts -->
+            <!-- Third RelativeLayout -->
+
+            <!-- Fourth RelativeLayout -->
+            <RelativeLayout
+                android:layout_width="188dp"
+                android:layout_height="129dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnSpan="3"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white">
+
+                <!-- ImageView (Top Middle) -->
+                <ImageView
+                    android:id="@+id/category_icon3"
+                    android:layout_width="79dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/history" />
+
+                <!-- TextView (Bottom) -->
+                <TextView
+                    android:id="@+id/category_textview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_icon3"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_topic2"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/category_desc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_textview3"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_text2"
+                    android:textAlignment="center"
+                    android:textColor="#737373"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="188dp"
+                android:layout_height="129dp"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_columnSpan="3"
+                android:layout_marginEnd="5dp"
+                android:background="@color/white">
+
+                <!-- ImageView (Top Middle) -->
+                <ImageView
+                    android:id="@+id/category_icon4"
+                    android:layout_width="79dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/operative_system" />
+
+                <!-- TextView (Bottom) -->
+                <TextView
+                    android:id="@+id/category_textview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_icon4"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_topic3"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/category_desc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_textview4"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_text3"
+                    android:textAlignment="center"
+                    android:textColor="#737373"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="188dp"
+                android:layout_height="129dp"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_columnSpan="3"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/white">
+
+                <!-- ImageView (Top Middle) -->
+                <ImageView
+                    android:id="@+id/category_icon6"
+                    android:layout_width="79dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/mathematics" />
+
+                <!-- TextView (Bottom) -->
+                <TextView
+                    android:id="@+id/category_textview6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_icon6"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_topic3"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/category_desc5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_textview6"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_text4"
+                    android:textAlignment="center"
+                    android:textColor="#737373"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="188dp"
+                android:layout_height="129dp"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:layout_columnSpan="3"
+                android:layout_marginEnd="5dp"
+                android:background="@color/white">
+
+                <!-- ImageView (Top Middle) -->
+                <ImageView
+                    android:id="@+id/category_icon5"
+                    android:layout_width="79dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/coding_language" />
+
+                <!-- TextView (Bottom) -->
+                <TextView
+                    android:id="@+id/category_textview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_icon5"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_topic4"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/category_desc6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_textview5"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_text5"
+                    android:textAlignment="center"
+                    android:textColor="#737373"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="188dp"
+                android:layout_height="129dp"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:layout_columnSpan="3"
+                android:layout_marginEnd="5dp"
+                android:background="@color/white">
+
+                <!-- ImageView (Top Middle) -->
+                <ImageView
+                    android:id="@+id/category_icon7"
+                    android:layout_width="79dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/project_management" />
+
+                <!-- TextView (Bottom) -->
+                <TextView
+                    android:id="@+id/category_textview7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_icon7"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_topic6"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/category_desc7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_textview7"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_text6"
+                    android:textAlignment="center"
+                    android:textColor="#737373"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="188dp"
+                android:layout_height="129dp"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_columnSpan="3"
+                android:layout_marginEnd="5dp"
+                android:background="@color/white">
+
+                <!-- ImageView (Top Middle) -->
+                <ImageView
+                    android:id="@+id/category_icon8"
+                    android:layout_width="79dp"
+                    android:layout_height="63dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/coder" />
+
+                <!-- TextView (Bottom) -->
+                <TextView
+                    android:id="@+id/category_textview8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_icon8"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_topic7"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/category_desc8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/category_textview8"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/category_text7"
+                    android:textAlignment="center"
+                    android:textColor="#737373"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </GridLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView_app_name"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:text="@string/category"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
+
+    <TextView
+        android:id="@+id/textView_category"
+        android:layout_width="157dp"
+        android:layout_height="36dp"
+        android:text="@string/app_name2"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/searchView"
+        android:layout_width="322dp"
+        android:layout_height="38dp"
+        android:background="@drawable/round_btn"
+        android:hint="@string/search_text"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="38dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
+        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:srcCompat="@drawable/search" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        android:background="@drawable/bottom_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/bottom_navigation_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">flashcard design</string>
+
+    <string name="section_name">FLASHCARDS</string>
+    <string name="term_text">Term</string>
+    <string name="definition_text">Definition</string>
+    <string name="option_text">\t\tList</string>
+    <string name="option_text2">Tt \t  Font</string>
+    <string name="option_text3">Alignment</string>
+
+    <string name="Title_text">Title</string>
+    <string name="flip_text">Tap to flip</string>
+    <string name="tag_text">Tag</string>
+
+    <string name="tag_text2">View Tags</string>
+
+    <string name="app_name2">STUDIFY</string>
+    <string name="category">CATEGORIES</string>
+    <string name="bottom_nav_text">Home</string>
+    <string name="bottom_nav_text2">Category</string>
+    <string name="bottom_nav_text3">Create</string>
+    <string name="bottom_nav_text4">My Flashcards</string>
+    <string name="bottom_nav_text5">Profile</string>
+    <string name="search_text">Search for flashcardsSearch for flashcards</string>
+    <string name="category_topic">Information Management</string>
+    <string name="category_topic2">History</string>
+    <string name="category_topic3">Operating Systems</string>
+    <string name="category_topic4">Mathematics</string>
+    <string name="category_topic5">Programming Languages</string>
+    <string name="category_topic6">Technology</string>
+    <string name="category_topic7">Coding</string>
+    <string name="category_topic8">Science</string>
+    <string name="category_text">Organize and retrieve data efficiently</string>
+    <string name="category_text2">Uncover past events and cultures</string>
+    <string name="category_text3">Manage computer hardware and software</string>
+    <string name="category_text4">Solve problems with numbers and patterns</string>
+    <string name="category_text5">Create software with diverse languages</string>
+    <string name="category_text6">Discover innovations shaping our world</string>
+    <string name="category_text7">Instruct computers with algorithms</string>
+    <string name="category_text8">Explore natural laws and phenomena</string>
+
+
+
+
+</resources>

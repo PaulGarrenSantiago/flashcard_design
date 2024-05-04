@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="170dp"
+        android:background="#FE6637"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="223dp">
+
+        <!-- Image View (Left Part) -->
+
+        <!-- Right Part (Term and Definition) -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="143dp"
+            android:layout_height="142dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginBottom="18dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/settings" />
+
+        <RelativeLayout
+            android:layout_width="223dp"
+            android:layout_height="146dp"
+            android:layout_toEndOf="@id/imageView">
+
+            <!-- Term EditText -->
+            <TextView
+                android:id="@+id/editTextTerm"
+                android:layout_width="216dp"
+                android:layout_height="136dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="text"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Image View in the Top Middle -->
+
+                <!-- Text View at the Bottom -->
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Your Text"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="348dp"
+        android:layout_height="205dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="401dp">
+
+        <!-- Image View (Top Middle) -->
+
+        <!-- Term EditText (Bottom) -->
+
+        <ImageView
+            android:id="@+id/category_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/category_textview"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="118dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/settings" />
+
+        <TextView
+            android:id="@+id/category_textview"
+            android:layout_width="314dp"
+            android:layout_height="71dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="22dp"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:text="Term"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
