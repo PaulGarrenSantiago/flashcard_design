@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B7C0F5"
-    tools:context=".MainActivity">
+    tools:context=".FlashcardBack">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -95,14 +95,14 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/TextViewDefinition"
+            android:id="@+id/textViewDefinition"
             android:layout_width="wrap_content"
             android:layout_height="309dp"
             android:layout_below="@id/textViewTerm"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="9dp"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/flashcard_border"
             android:minLines="3"
@@ -111,6 +111,16 @@
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="209dp"
+            android:layout_height="142dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="220dp"
+            app:srcCompat="@drawable/image" />
 
     </RelativeLayout>
 
@@ -166,17 +176,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.942" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="209dp"
-        android:layout_height="142dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64"
-        app:srcCompat="@drawable/image" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

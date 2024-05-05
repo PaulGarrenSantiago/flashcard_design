@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B7C0F5"
-    tools:context=".MainActivity">
+    tools:context=".FlashcardFront">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -85,30 +85,11 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="11dp"
-            android:layout_marginTop="14dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="184dp"
+            android:layout_marginEnd="10dp"
             android:padding="8dp"
             android:text="@string/term_text"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/TextViewDefinition"
-            android:layout_width="wrap_content"
-            android:layout_height="309dp"
-            android:layout_below="@id/textViewTerm"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="11dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="14dp"
-            android:background="@drawable/flashcard_border"
-            android:gravity="center"
-            android:minLines="3"
-            android:padding="8dp"
-            android:text="@string/definition_text"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
