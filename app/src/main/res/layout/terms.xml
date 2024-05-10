@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7C0F5"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="407dp"
+        android:layout_height="107dp"
+        android:background="#51E3D5"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <RelativeLayout
+            android:layout_width="380dp"
+            android:layout_height="100dp">
+
+        <!-- Term EditText -->
+
+            <TextView
+                android:id="@+id/createTxt"
+                android:layout_width="103dp"
+                android:layout_height="56dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="227dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/create_text"
+                android:textSize="34sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="36dp"
+                android:layout_height="32dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/back"
+                android:backgroundTint="#090909"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/settingsBtn"
+                android:layout_width="32dp"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/settings" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/MainTitleTxt"
+        android:layout_width="362dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/definition_rectangle"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Advanced Technology Terms"
+        android:padding="20dp"
+        android:textAlignment="textStart"
+        android:textColor="#0B0B0B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/MainDescriptionTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/MainDescriptionTxt"
+        android:layout_width="365dp"
+        android:layout_height="167dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/definition_rectangle"
+        android:hint="This topic will provide various information that’ll help us to understand such terms in the range of Technology."
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:textAlignment="viewStart"
+        android:textColor="#0B0B0B"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.36" />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="TITLE"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/MainTitleTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.407" />
+
+    <TextView
+        android:id="@+id/DescriptionTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="DESCRIPTION"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/MainDescriptionTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.873" />
+
+    <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="273dp"
+        android:background="@drawable/plain_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainDescriptionTxt"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/CategoryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="220dp"
+            android:fontFamily="sans-serif-black"
+            android:text="SELECT A CATEGORY"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/SciBtn"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="167dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#6073E1"
+            android:padding="5dp"
+            android:text="@string/science_text"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/MathBtn"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="58dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#6073E1"
+            android:text="@string/math_text"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/OSBtn"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="181dp"
+            android:layout_marginBottom="113dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#6073E1"
+            android:text="@string/os_text"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/TechBtn"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginBottom="112dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#51E3D5"
+            android:text="@string/technology_text"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/IM2Btn"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="194dp"
+            android:layout_marginBottom="57dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#6073E1"
+            android:text="@string/im2_text"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/ITBtn"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="182dp"
+            android:layout_marginBottom="169dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="#6073E1"
+            android:text="@string/itelective_text"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/NextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FE6637"
+            android:text="NEXT"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,7 @@
     <string name="category_topic6">Technology</string>
     <string name="category_topic7">Coding</string>
     <string name="category_topic8">Science</string>
-    <string name="category_text">Organize and retrieve data efficiently</string>
+    <string name="category_text1">Organize and retrieve data efficiently</string>
     <string name="category_text2">Uncover past events and cultures</string>
     <string name="category_text3">Manage computer hardware and software</string>
     <string name="category_text4">Solve problems with numbers and patterns</string>
@@ -39,5 +39,47 @@
     <string name="category_text7">Instruct computers with algorithms</string>
     <string name="category_text8">Explore natural laws and phenomena</string>
 
+    <string name="username_text">Username</string>
+    <string name="password_text">Password</string>
+    <string name="login_text">Login</string>
+    <string name="forgetpassword_text">Forget Password?</string>
+    <string name="facebookLogin_text">Continue with Facebook</string>
+    <string name="googleLogin_text">Continue with Google</string>
+    <string name="emailAddress_text">Email Address</string>
+
+    <string name="student_text">Student</string>
+    <string name="sinstructor_text">Instructor</string>
+    <string name="signup_text">Sign Up</string>
+
+    <string name="it_text">Information Technology</string>
+    <string name="itdesc_text">Understanding different Programming Languages</string>
+    <string name="db_text">Database \nManagement</string>
+    <string name="dbdesc_text">Optimization and Security</string>
+    <string name="app_text">Mobile \nApplication \nDevelopment</string>
+    <string name="appdesc_text">Guide to Creating Apps for Android and iOS Platforms</string>
+    <string name="cloud_text">Cloud \nComputing</string>
+    <string name="clouddesc_text"> Maximizing Cloud Services for Modern Computing</string>
+    <string name="game_text">Game \nDevelopment</string>
+    <string name="gamedesc_text">A Deep Dive into the World of Interactive Entertainment</string>
+    <string name="inthings_text">Internet of \nThings (IoT)</string>
+    <string name="inthings_desc">Connecting the World through Smart Devices</string>
+
+    <string name="home_text">Home</string>
+    <string name="category_text">Category</string>
+    <string name="add_text">Create</string>
+    <string name="flashcards_text">My Flashcards</string>
+    <string name="profile_text">Profile</string>
+
+    <string name="create_text">Create</string>
+    <string name="settings_text">Settings</string>
+
+    <string name="science_text">SCIENCE</string>
+    <string name="itelective_text">IT ELECTIVE</string>
+    <string name="technology_text">TECHNOLOGY</string>
+    <string name="os_text">OPERATING SYSTEMS</string>
+    <string name="math_text">MATHEMATICS</string>
+    <string name="im2_text">IM 2</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
 
 </resources>

@@ -120,7 +120,7 @@
                     android:layout_height="34dp"
                     android:layout_below="@id/category_textview2"
                     android:layout_centerHorizontal="true"
-                    android:text="@string/category_text8"
+                    android:text="@string/category_text1"
                     android:textAlignment="center"
                     android:textColor="#737373"
                     android:textSize="12sp" />
