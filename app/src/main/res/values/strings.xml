@@ -82,4 +82,34 @@
     <string name="sign_up">Sign Up</string>
     <string name="email">Email</string>
 
+    <string name="about_us"> About Us</string>
+    <string name="about_us_message">
+        Welcome to our Studify! We are a team of passionate developers studying in the BSIT program, committed to creating a seamless and effective learning experience for you.
+
+        <big><b>\n\nOur Mission:</b></big>
+
+        \n  Our mission is to empower learners like you with a tool that makes studying enjoyable and efficient. We believe in the power of technology to enhance education, and we strive to leverage it to make learning accessible to all.
+
+        <big><b>\n\nFeatures:</b></big>
+
+        \n- <b>Customizable Flashcards:</b> Tailor your study materials to suit your learning style.
+        \n- <b>User-Friendly Interface:</b>  Intuitive design for effortless navigation.
+        \n- <b>Progress Tracking:</b>  Keep track of your learning journey and monitor your progress over time.
+        \n- <b>Seamless Integration:</b>  Sync your data across devices for uninterrupted study sessions.
+
+        <big><b>\n\nContact Us:</b></big>
+        \nHave feedback, suggestions, or questions? We\u0027d love to hear from you! Feel free to reach out to us at studify@gmail.com.
+
+        \n\nThank you for choosing our app to support your learning endeavors. We\u0027re dedicated to continuously improving and providing you with the best possible study experience.
+
+        \n\nHappy learning!
+
+        <big><b>\n\nDevelopers:</b></big>
+        \n- Paul Garren Santiago
+        \n- Maegan Rose Gabuyo
+        \n- Justin Louie Arangorin
+    </string>
+
+
+
 </resources>
