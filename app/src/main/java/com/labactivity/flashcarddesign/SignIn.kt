@@ -44,7 +44,7 @@ class SignIn : AppCompatActivity() {
                             "Successfully Registered.",
                             Toast.LENGTH_SHORT
                         ).show()
-                        val intent = Intent(this, LoginScreen::class.java)
+                        val intent = Intent(this, AboutUs::class.java)
                         startActivity(intent)
                         finish()
                     } else {
