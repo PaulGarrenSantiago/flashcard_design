@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814243366784",
+    "project_id": "login-flashcard-b039d",
+    "storage_bucket": "login-flashcard-b039d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814243366784:android:51f8acdcd7b49796d1e365",
+        "android_client_info": {
+          "package_name": "com.labactivity.flashcarddesign"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuIgoEKo31HFEOdK6Q4FHkgKRGxngnyKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
