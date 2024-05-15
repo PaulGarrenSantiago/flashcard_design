@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7C0F5"
+    tools:context=".myFlashcards">
+
+    <View
+        android:id="@+id/myFlashcardsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/custom_background_cyan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMyFlashcards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/my_flashcards1"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/myFlashcardsHeader"
+        app:layout_constraintStart_toEndOf="@+id/myFlashcardBack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <ImageButton
+        android:id="@+id/myFlashcardBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/myFlashcardsHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581"
+        app:srcCompat="@mipmap/back_foreground"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/myFlashcardSettings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/myFlashcardsHeader"
+        app:layout_constraintEnd_toEndOf="@+id/myFlashcardsHeader"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toEndOf="@+id/txtMyFlashcards"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:srcCompat="@mipmap/settings_foreground"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myFlashcardsHeader">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_background_orange"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFlashcard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="72dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/tech_foreground">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/flashcardTitle1"
+                    android:layout_width="199dp"
+                    android:layout_height="19dp"
+                    android:layout_below="@+id/imgFlashcard1"
+                    android:layout_alignBottom="@id/imgFlashcard1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="46dp"
+                    android:layout_marginBottom="-23dp"
+                    android:gravity="center"
+                    android:text="@string/advanced_technology_term"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_background_cyan"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFlashcard2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="72dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/mobile_foreground">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/flashcardTitle2"
+                    android:layout_width="199dp"
+                    android:layout_height="19dp"
+                    android:layout_below="@+id/imgFlashcard2"
+                    android:layout_alignBottom="@id/imgFlashcard2"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="46dp"
+                    android:layout_marginBottom="-23dp"
+                    android:gravity="center"
+                    android:text="@string/mobile_technology"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_background_cyan"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFlashcard3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="72dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="72dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@mipmap/prog_lang">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/flashcardTitle3"
+                    android:layout_width="199dp"
+                    android:layout_height="19dp"
+                    android:layout_below="@+id/imgFlashcard3"
+                    android:layout_alignBottom="@id/imgFlashcard3"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="54dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="47dp"
+                    android:layout_marginBottom="-35dp"
+                    android:gravity="center"
+                    android:text="@string/programming_languages"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@mipmap/add_foreground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

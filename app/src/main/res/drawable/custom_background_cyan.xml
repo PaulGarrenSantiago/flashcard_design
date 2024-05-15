@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Black border -->
+    <stroke
+        android:width="3dp"
+        android:color="#000000" />
+
+    <!-- Red fill color -->
+    <solid android:color="#51E3D5" /> <!-- Replace with your desired fill color -->
+</shape>

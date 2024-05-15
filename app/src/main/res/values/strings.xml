@@ -157,4 +157,32 @@
     <string name="my_flaschcard_title">Introduction to Kotlin</string>
 
 
+
+
+    <string name="flashcard_title">ADVANCED TECHNOLOGY TERMS</string>
+    <string name="rate_message">Rate your experience and help us improve!</string>
+    <string name="submit">Submit</string>
+    <string name="flashcard_options">FLASHCARD OPTIONS</string>
+    <string name="privacy">PRIVACY</string>
+    <string name="who_can_edit">Who can edit?</string>
+    <string name="who_can_view">Who can view?</string>
+    <string name="share_flashcard"><u>Share Flashcard</u></string>
+    <string name="see_ratings">See Ratings</string>
+    <string name="delete_flashcard">Delete Flashcard</string>
+    <string name="profile">Profile</string>
+    <string name="username">Username</string>
+    <string name="example_email">example@gmail.com</string>
+    <string name="total_flashcard">Total Flashcards</string>
+    <string name="time_of_studying">Time of studying</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="rating">Rating</string>
+    <string name="tag">TAG</string>
+    <string name="color">Color</string>
+    <string name="tag_description">TAG DESCRIPTION</string>
+    <string name="add">ADD</string>
+    <string name="exit">exit</string>
+    <string name="my_flashcards1">MY FLASHCARDS</string>
+    <string name="advanced_technology_term">Advanced Technology Terms</string>
+    <string name="mobile_technology">Mobile Technology</string>
+    <string name="programming_languages">Programming Languages</string>
 </resources>

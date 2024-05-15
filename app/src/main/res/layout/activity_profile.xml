@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7C0F5"
+    tools:context=".profile">
+
+    <View
+        android:id="@+id/viewProfileHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:background="@drawable/custom_background_cyan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginEnd="160dp"
+        android:text="@string/profile"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProfileHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/viewProfileHeader"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <ImageButton
+        android:id="@+id/imgBackProf"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/viewProfileHeader"
+        app:layout_constraintEnd_toStartOf="@+id/txtProfile"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262"
+        app:srcCompat="@mipmap/back_foreground" />
+
+    <ImageButton
+        android:id="@+id/imgBtnProfile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="64dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtProfile"
+        app:srcCompat="@drawable/profile_image_placeholder" />
+
+    <TextView
+        android:id="@+id/edtUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/username"
+        android:textSize="23dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnProfile" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="@string/example_email"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUsername" />
+
+    <View
+        android:id="@+id/totalFlashCard"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_rect"
+        app:layout_constraintEnd_toStartOf="@+id/totalTimeStudying"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <View
+        android:id="@+id/totalTimeStudying"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/round_rect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <View
+        android:id="@+id/accuracy"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/round_rect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rating"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalFlashCard"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <View
+        android:id="@+id/rating"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/round_rect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalTimeStudying"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <ImageView
+        android:id="@+id/imgFlashcard"
+        android:layout_width="54dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="@+id/totalFlashCard"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/totalFlashCard"
+        app:layout_constraintTop_toTopOf="@+id/totalFlashCard"
+        app:srcCompat="@mipmap/flashcard_foreground" />
+
+    <TextView
+        android:id="@+id/totalFlashcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_flashcard"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/totalFlashCard"
+        app:layout_constraintStart_toStartOf="@+id/totalFlashCard"
+        app:layout_constraintTop_toBottomOf="@+id/imgFlashcard" />
+
+    <TextView
+        android:id="@+id/txtFlashcardNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalFlashCard"
+        app:layout_constraintEnd_toEndOf="@+id/totalFlashCard"
+        app:layout_constraintStart_toStartOf="@+id/totalFlashCard"
+        app:layout_constraintTop_toBottomOf="@+id/totalFlashcard"
+        app:layout_constraintVertical_bias=".2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="@+id/totalTimeStudying"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/totalTimeStudying"
+        app:layout_constraintTop_toTopOf="@+id/totalTimeStudying"
+        app:srcCompat="@mipmap/time_foreground" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/time_of_studying"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/totalTimeStudying"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/totalTimeStudying"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/txtStudyTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0 Hour"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalTimeStudying"
+        app:layout_constraintEnd_toEndOf="@+id/totalTimeStudying"
+        app:layout_constraintStart_toStartOf="@+id/totalTimeStudying"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias=".2"/>
+
+    <ImageView
+        android:id="@+id/imgAccuracy"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:scaleType="center"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/accuracy"
+        app:layout_constraintStart_toStartOf="@+id/accuracy"
+        app:layout_constraintTop_toTopOf="@+id/accuracy"
+        app:srcCompat="@mipmap/accuracy_foreground" />
+
+    <TextView
+        android:id="@+id/txtAccuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accuracy"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/accuracy"
+        app:layout_constraintStart_toStartOf="@+id/accuracy"
+        app:layout_constraintTop_toBottomOf="@+id/imgAccuracy" />
+
+    <TextView
+        android:id="@+id/txtAccuracyPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0%"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/accuracy"
+        app:layout_constraintEnd_toEndOf="@+id/accuracy"
+        app:layout_constraintStart_toStartOf="@+id/accuracy"
+        app:layout_constraintTop_toBottomOf="@+id/txtAccuracy"
+        app:layout_constraintVertical_bias=".2"/>
+
+    <ImageView
+        android:id="@+id/imgRating"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:scaleType="center"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/rating"
+        app:layout_constraintStart_toStartOf="@+id/rating"
+        app:layout_constraintTop_toTopOf="@+id/rating"
+        app:srcCompat="@mipmap/rating_foreground" />
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/rating"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/rating"
+        app:layout_constraintHorizontal_bias="0.490"
+        app:layout_constraintStart_toStartOf="@+id/rating"
+        app:layout_constraintTop_toBottomOf="@+id/imgRating"
+        />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="0.0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rating"
+        app:layout_constraintEnd_toEndOf="@+id/rating"
+        app:layout_constraintStart_toStartOf="@+id/rating"
+        app:layout_constraintTop_toBottomOf="@+id/txtRating"
+        app:layout_constraintVertical_bias=".2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
