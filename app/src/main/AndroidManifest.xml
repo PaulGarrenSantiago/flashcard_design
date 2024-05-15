@@ -15,6 +15,9 @@
         android:theme="@style/Theme.FlashcardDesign"
         tools:targetApi="31">
         <activity
+            android:name=".SampleFlashcards2"
+            android:exported="false" />
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity

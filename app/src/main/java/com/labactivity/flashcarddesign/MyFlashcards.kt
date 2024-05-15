@@ -28,5 +28,9 @@ class MyFlashcards : AppCompatActivity() {
             val intent = Intent(this, SampleFlashcards::class.java)
             startActivity(intent)
         }
+        binding.flashcard2.setOnClickListener(){
+            val intent = Intent(this, SampleFlashcards2::class.java)
+            startActivity(intent)
+        }
     }
 }
