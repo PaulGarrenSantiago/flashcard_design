@@ -3,7 +3,6 @@ package com.labactivity.flashcarddesign
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.labactivity.flashcarddesign.databinding.ActivityMainBinding
 import com.labactivity.flashcarddesign.databinding.FlashcardFrontBinding
 
 class FlashcardFront : AppCompatActivity() {
@@ -15,8 +14,11 @@ class FlashcardFront : AppCompatActivity() {
 
         val term =intent.getStringExtra("termData")
         val def =intent.getStringExtra("defData")
+        val title = intent.getStringExtra("titleData")
+        val desc = intent.getStringExtra("descData")
 
         binding.textViewTerm.text = term
+        binding.titleTxt.text = title
 
         binding.flipBtn.setOnClickListener(){
             val intent = Intent(this,FlashcardBack::class.java)
