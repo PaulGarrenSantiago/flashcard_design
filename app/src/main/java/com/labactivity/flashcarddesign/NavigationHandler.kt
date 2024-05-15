@@ -33,6 +33,12 @@ object NavigationHandler {
                     activity.finish()
                 }
             }
+            R.id.action_profile -> {
+                if (activity !is Terms) {
+                    activity.startActivity(Intent(activity, Profile::class.java))
+                    activity.finish()
+                }
+            }
             // Add other cases for remaining menu items if needed
         }
     }
