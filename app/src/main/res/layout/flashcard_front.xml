@@ -95,6 +95,25 @@
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
+        <TextView
+            android:id="@+id/textViewDefinition"
+            android:layout_width="wrap_content"
+            android:layout_height="309dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="57dp"
+            android:background="@drawable/flashcard_border"
+            android:gravity="center"
+            android:minLines="3"
+            android:padding="8dp"
+            android:text="@string/definition_text"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
     </RelativeLayout>
 
     <ImageButton
@@ -125,6 +144,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.114"
         app:srcCompat="@drawable/next" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="61dp"
+        android:layout_height="41dp"
+        android:background="@drawable/round_btn"
+        android:backgroundTint="#FE6637"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114"
+        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/textView_cardNum"

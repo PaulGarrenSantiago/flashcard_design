@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.labactivity.flashcarddesign.databinding.ActivitySampleFlashcards2Binding
-import com.labactivity.flashcarddesign.databinding.ActivitySampleFlashcardsBinding
+
 
 class SampleFlashcards2 : AppCompatActivity() {
 

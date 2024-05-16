@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#B7C0F5"
-    tools:context=".SampleFlashcards">
+    tools:context=".SampleFlashcardsDB">
 
     <ImageButton
         android:id="@+id/backBtn"

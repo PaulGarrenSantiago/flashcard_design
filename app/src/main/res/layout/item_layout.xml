@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:id="@+id/flashcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/rectangle">
+
+        <!-- ImageView (Top Middle) -->
+        <ImageView
+            android:id="@+id/category_icon1"
+            android:layout_width="397dp"
+            android:layout_height="74dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/flashcardimage" />
+
+        <!-- TextView (Bottom) -->
+        <TextView
+            android:id="@+id/category_textview1"
+            android:layout_width="271dp"
+            android:layout_height="84dp"
+            android:layout_below="@id/category_icon1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="63dp"
+            android:text="@string/my_flaschcard_title"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

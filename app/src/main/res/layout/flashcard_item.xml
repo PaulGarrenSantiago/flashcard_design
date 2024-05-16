@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="174dp"
+    android:layout_marginBottom="16dp"
+    android:background="#FE6637">
+
+    <EditText
+        android:id="@+id/editTextTerm"
+        android:layout_width="361dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/border"
+        android:hint="@string/term_text"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextDefinition"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTerm"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/border"
+        android:hint="@string/definition_text"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:padding="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

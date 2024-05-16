@@ -15,6 +15,18 @@
         android:theme="@style/Theme.FlashcardDesign"
         tools:targetApi="31">
         <activity
+            android:name=".SampleFlashcardsIOT"
+            android:exported="false" />
+        <activity
+            android:name=".SampleFlashcardsGameDev"
+            android:exported="false" />
+        <activity
+            android:name=".SampleFlashcardsCloud"
+            android:exported="false" />
+        <activity
+            android:name=".SampleFlashcardsDB"
+            android:exported="false" />
+        <activity
             android:name=".SampleFlashcards2"
             android:exported="false" />
         <activity

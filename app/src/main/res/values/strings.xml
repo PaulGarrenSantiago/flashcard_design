@@ -184,4 +184,5 @@
     <string name="mobile_technology">Mobile Technology</string>
     <string name="programming_languages">Programming Languages</string>
     <string name="logout">Logout</string>
+    <string name="done">Done</string>
 </resources>

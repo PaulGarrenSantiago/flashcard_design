@@ -17,6 +17,8 @@ class Terms : AppCompatActivity() {
             val titleInput = binding.titleTxt.text.toString()
             val descriptionInput = binding.DescriptionTxt.text.toString()
             val intent = Intent(this, FlashcardCreate::class.java)
+            intent.putExtra("title",titleInput)
+            intent.putExtra("description", descriptionInput)
             startActivity(intent)
         }
     }
