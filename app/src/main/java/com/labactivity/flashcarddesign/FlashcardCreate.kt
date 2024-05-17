@@ -17,12 +17,12 @@ class FlashcardCreate : AppCompatActivity() {
         binding = FlashcardCreateScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.addBtn.setOnClickListener {
-            addFlashcard()
-        }
-
         binding.doneBtn.setOnClickListener {
             passDataToNextActivity()
+        }
+
+        binding.addBtn.setOnClickListener {
+            addFlashcard()
         }
     }
 
