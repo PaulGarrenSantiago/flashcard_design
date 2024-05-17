@@ -278,6 +278,7 @@
         android:layout_alignParentBottom="true"
         android:background="@drawable/bottom_nav"
         app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
