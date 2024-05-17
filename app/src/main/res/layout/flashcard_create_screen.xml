@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B7C0F5"
+    android:background="#FFFFFF"
     tools:context=".FlashcardCreate">
 
 
@@ -145,7 +145,7 @@
             android:padding="16dp">
 
 
-            <include layout="@layout/flashcard_item"/>
+            <include layout="@layout/flashcard_item" />
 
         </LinearLayout>
 

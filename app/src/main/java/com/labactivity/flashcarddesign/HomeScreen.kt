@@ -31,7 +31,7 @@ class HomeScreen : AppCompatActivity() {
             GridList(R.drawable.db, "Database \nManagement", "Optimization and Security"),
             GridList(R.drawable.app, "Mobile \nApplication \nDevelopment", "Guide to Creating Apps for Android and iOS Platforms"),
             GridList(R.drawable.cloud, "Cloud \nComputing", "Maximizing Cloud Services for Modern Computing"),
-            GridList(R.drawable.gamedev, ">Game \nDevelopment", "A Deep Dive into the World of Interactive Entertainment"),
+            GridList(R.drawable.gamedev, "Game \nDevelopment", "A Deep Dive into the World of Interactive Entertainment"),
             GridList(R.drawable.inthings, "Internet of \nThings (IoT)", "Connecting the World through Smart Devices"),
         )
         recyclerView.adapter = GridRecyclerAdapter(items)

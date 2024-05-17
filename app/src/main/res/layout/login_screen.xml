@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Welcome to Studify!"
+        android:text="@string/welcome_to_studify"
         android:textColor="#545454"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,7 +21,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.088" />
 
     <ImageView
         android:id="@+id/logo"
@@ -71,7 +71,7 @@
         android:ems="10"
         android:hint="@string/email"
         android:inputType="text"
-        android:textColor="#737373"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.546"
@@ -99,7 +99,7 @@
         android:ems="10"
         android:hint="@string/password_text"
         android:inputType="text"
-        android:textColor="#737373"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
@@ -145,6 +145,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.643" />
 
+
     <TextView
         android:id="@+id/ForgetpasswordTxt"
         android:layout_width="wrap_content"
@@ -153,21 +154,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.707" />
+        app:layout_constraintTop_toBottomOf="@+id/LoginBtn"
+        app:layout_constraintVertical_bias="0.07" />
 
     <TextView
         android:id="@+id/orTxt"
-        android:layout_width="92dp"
-        android:layout_height="17dp"
+        android:layout_width="88dp"
+        android:layout_height="23dp"
         android:text="or log in with"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/orFbBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
-
+        app:layout_constraintTop_toBottomOf="@+id/ForgetpasswordTxt"
+        app:layout_constraintVertical_bias="0.38" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/orFbBtn"
@@ -183,7 +183,7 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83"
+        app:layout_constraintVertical_bias="0.841"
         tools:text="@string/facebookLogin_text">
 
     </androidx.appcompat.widget.AppCompatButton>
@@ -199,25 +199,25 @@
         android:textColorHint="#545454"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896">
+        app:layout_constraintTop_toBottomOf="@+id/orFbBtn"
+        app:layout_constraintVertical_bias="0.136">
 
     </androidx.appcompat.widget.AppCompatButton>
 
     <TextView
         android:id="@+id/signUpTxt"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="54dp"
+        android:layout_height="27dp"
         android:text="@string/sign_up"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.96" />
+        app:layout_constraintVertical_bias="0.977" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

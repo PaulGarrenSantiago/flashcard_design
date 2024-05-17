@@ -13,7 +13,7 @@ class SplashScreen : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            val intent = Intent(this, LoginScreen::class.java)
+            val intent = Intent(this, MyFlashcards::class.java)
             startActivity(intent)
             this.finish()
         },3000)

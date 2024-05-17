@@ -4,22 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B7C0F5"
+    android:background="#FFFFFF"
     tools:context=".SampleFlashcardsDB">
 
     <ImageButton
         android:id="@+id/backBtn"
-        android:layout_width="61dp"
-        android:layout_height="41dp"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
         android:background="@drawable/round_btn"
         android:backgroundTint="#FE6637"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toStartOf="@+id/tagbtn"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.114"
+        app:layout_constraintVertical_bias="0.124"
         app:srcCompat="@drawable/back" />
 
     <androidx.appcompat.widget.Toolbar
@@ -120,8 +120,8 @@
 
     <ImageButton
         android:id="@+id/flipBtn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
         android:background="@drawable/round_btn"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -134,17 +134,17 @@
 
     <ImageButton
         android:id="@+id/nextBtn"
-        android:layout_width="61dp"
-        android:layout_height="41dp"
+        android:layout_width="40dp"
+        android:layout_height="24dp"
         android:background="@drawable/round_btn"
         android:backgroundTint="#FE6637"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toEndOf="@+id/tagbtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.114"
+        app:layout_constraintVertical_bias="0.124"
         app:srcCompat="@drawable/next" />
 
     <TextView

@@ -185,4 +185,5 @@
     <string name="programming_languages">Programming Languages</string>
     <string name="logout">Logout</string>
     <string name="done">Done</string>
+    <string name="welcome_to_studify">Welcome to Studify!</string>
 </resources>
