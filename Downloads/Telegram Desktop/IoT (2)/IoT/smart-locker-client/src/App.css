@@ -1,0 +1,9 @@
+.app-wrapper {
+  height: 100vh; /* full viewport height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* top-middle placement */
+  padding-top: 100px; /* adjust distance from top */
+}
